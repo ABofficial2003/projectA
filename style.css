@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+#main {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+#landing {
+  min-height: 100vh;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.nav {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+
+.nav > #logo {
+  width: 180px;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-left: 30px;
+  cursor: default;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 35px;
+  padding: 3px 10px;
+}
+
+.nav-right h3 {
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-right > i {
+  margin-top: 3.5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#homemain {
+  width: 100%;
+  padding: 15vw 16vw;
+}
+
+#homemain h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#homemain .title {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+#homemain .title h1 {
+  font-size: 7vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+  transition: all 0.3s;
+}
+
+#homemain .title h1:hover {
+  color: black;
+}
+
+#homebtm {
+  padding: 5px 16vw;
+
+  width: 100%;
+}
+
+#homebtm p {
+  font-size: 1.7vw;
+  letter-spacing: -0.5px;
+  text-align: left;
+  width: 70%;
+}
+
+#homebtm p::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+#featured {
+  padding: 10vw 16vw;
+}
+
+.f-heading > h1 {
+  font-size: 3.5vw;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.f-heading > h1:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+#f-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+
+#f-left {
+  overflow: hidden;
+  width: 45%;
+  height: inherit;
+}
+
+#f-right {
+  width: 45%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#f-right .images {
+  height: 85%;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#f-right .images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#f-left .fleftelm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+}
+
+#f-left .fleftelm h1 {
+  font-size: 2.2vw;
+  width: 80%;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+#f-left .fleftelm h3 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin-bottom: 1.2vw;
+}
+
+#f-left .fleftelm h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: rgba(56, 56, 56, 0.932);
+  margin-top: 1.2vw;
+}
+
+.btn-div {
+  margin-top: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-div button {
+  padding: 1vw 2vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  background-color: rgb(241, 241, 241);
+  cursor: pointer;
+  border-radius: 100px;
+  transition: all 0.3s;
+  border: 1.5px solid rgb(127, 127, 127);
+}
+
+.btn-div button:hover {
+  font-size: 1.39vw;
+}
+
+#dev-section {
+  width: 100%;
+  padding: 3vw 16vw;
+}
+
+#dev-section h1 {
+  font-size: 3.4vw;
+  width: 40%;
+  letter-spacing: -0.9px;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+#dev-section p {
+  font-size: 1.5vw;
+  margin-top: 2vw;
+  width: 50%;
+}
+
+#slides {
+  width: 100%;
+  padding: 2vw 8vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 30%;
+  border-radius: 8px;
+  overflow: hidden;
+  perspective: 100px;
+}
+
+.slide img {
+  border-radius: 8px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.slide img:hover {
+  transform: translateZ(8px);
+  border-radius: 8px;
+}
+
+.slide .tag {
+  margin: 20px 22px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  letter-spacing: -0.3px;
+  font-size: 15px;
+  font-weight: 500;
+  width: fit-content;
+  color: #000000e5;
+  background-color: #f0bd90de;
+}
+
+.slide h2 {
+  font-size: 1.2vw;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+#last-section {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  padding: 6vw 0;
+  position: relative;
+}
+
+#last-section h1 {
+  font-size: 7vw;
+  padding: 2vw 3vw;
+  font-weight: 500;
+
+  border-bottom: 1px solid rgb(68, 68, 68);
+  width: 96%;
+  margin-left: 4%;
+}
+
+#swipper {
+  height: 60vh;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+.swiper-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  padding-left: 30px;
+  width: calc(340px * 10);
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-340px * 5));
+  }
+}
+
+.swipe {
+  height: 420px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  perspective: 100px;
+}
+
+.swipe .tag {
+  margin: 7px 10px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.swipe .tag h3 {
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.swipe p {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.swipe .img1 {
+  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  background-color: yellow;
+}
+
+.swipe .img2 {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 50%;
+  width: 100%;
+  background-color: rgb(37, 128, 66);
+}
+
+.swipe img {
+  transition: transform 0.5s;
+}
+
+.swipe img:hover {
+  transform: translateZ(8px);
+}
